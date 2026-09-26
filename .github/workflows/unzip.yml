@@ -1,4 +1,5 @@
-name: Unzip project
+
+: Unzip project
 on:
   push:
     paths:
@@ -21,3 +22,4 @@ jobs:
           git add .
           git commit -m "Extract ZIP" || echo "nothing to commit"
           git push
+          # trigger
